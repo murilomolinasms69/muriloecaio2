@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bloco de Notas</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="container">
+    <h1>📝 Bloco de Notas</h1>
+
+    <!-- BLOCO DE ANOTAÇÕES PERMANENTES -->
+    <section class="bloco">
+      <h2>Anotações Permanentes</h2>
+      <textarea id="anotacoes" placeholder="Escreva suas anotações aqui..."></textarea>
+      <div class="info">
+        <span id="contador">0 caracteres</span>
+        <div class="botoes-bloco">
+          <button id="limparAnotacoes">Limpar</button>
+          <button id="exportarAnotacoes">Exportar TXT</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- RASCUNHO DE SESSÃO -->
+    <section class="bloco">
+      <h2>Rascunho de Sessão</h2>
+      <textarea id="rascunho" placeholder="Esse texto só fica salvo até fechar a aba..."></textarea>
+      <div class="info">
+        <div class="botoes-bloco">
+          <button id="limparRascunho">Limpar</button>
+          <button id="exportarRascunho">Exportar TXT</button>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
